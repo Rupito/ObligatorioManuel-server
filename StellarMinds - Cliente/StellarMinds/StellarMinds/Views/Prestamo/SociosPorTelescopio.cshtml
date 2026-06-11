@@ -1,0 +1,66 @@
+﻿@model IEnumerable<StellarMinds.Models.SocioModel>
+
+@{
+    ViewData["Title"] = "Socios por Telescopio";
+}
+
+<h2>Socios que solicitan un Telescopio</h2>
+<hr />
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">@ViewBag.Error</div>
+}
+
+<form asp-action="SociosPorTelescopio" method="get" class="row g-3 align-items-end mb-4">
+    <div class="col-md-8">
+        <label class="form-label fw-bold">Seleccione un Telescopio</label>
+        <select name="idTelescopio" class="form-control" required>
+            <option value="">-- Seleccione --</option>
+            @foreach (EquipoModel t in ViewBag.Telescopios)
+            {
+                <option value="@t.IdEquipo">@t.Marca @t.Modelo</option>
+            }
+        </select>
+    </div>
+    <div class="col-md-4">
+        <button type="submit" class="btn btn-primary">Ver Socios</button>
+    </div>
+</form>
+
+@if (ViewBag.TelescopioSeleccionado == null)
+{
+    <div class="alert alert-secondary text-center">
+        Seleccione un telescopio
+    </div>
+}
+else if (Model == null || !Model.Any())
+{
+    <div class="alert alert-warning text-center">
+        No existen socios que hayan solicitado este telescopio.
+    </div>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID Socio</th>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Rol</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (SocioModel socio in Model)
+            {
+                    <tr>
+                    <td>@socio.IdSocio</td>
+                    <td>@socio.NombreUsuario</td>
+                    <td>@socio.Email</td>
+                    <td>@socio.Rol</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

@@ -1,0 +1,46 @@
+﻿@model StellarMinds.Models.PrestamoModel
+
+@{
+    ViewData["Title"] = "Detalles del Préstamo";
+}
+
+<h2>Detalles del Préstamo #@Model.IdPrestamo</h2>
+<hr />
+
+<div class="card shadow-sm">
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-4">ID del Socio:</dt>
+            <dd class="col-sm-8">#@Model.IdSocio</dd>
+
+            <dt class="col-sm-4">Fecha de Inicio:</dt>
+            <dd class="col-sm-8">@Model.FechaInicio.ToString("dd/MM/yyyy")</dd>
+
+            <dt class="col-sm-4">Fecha de Fin:</dt>
+            <dd class="col-sm-8">@Model.FechaFin.ToString("dd/MM/yyyy")</dd>
+
+            <dt class="col-sm-4">Estado Actual:</dt>
+            <dd class="col-sm-8">
+                <span class="badge @(Model.Estado.ToString() == "DEVUELTO" ? "bg-success" : "bg-warning text-dark")">
+                    @Model.Estado
+                </span>
+            </dd>
+        </dl>
+    </div>
+</div>
+
+<h3 class="mt-4">Equipos Solicitados</h3>
+<div class="card shadow-sm mb-4">
+    <div class="card-body">
+        <ul>
+            <li><strong>ID Telescopio:</strong> #@Model.IdTelescopio</li>
+            <li><strong>ID Montura:</strong> #@Model.IdMontura</li>
+            @if (Model.IdEquipoVisual != null && Model.IdEquipoVisual > 0)
+            {
+                <li><strong>ID Equipo Visual (Cámara/Ocular):</strong> #@Model.IdEquipoVisual</li>
+            }
+        </ul>
+    </div>
+</div>
+
+<a asp-action="InformacionAuditoriaPrestamo" class="btn btn-secondary">Volver</a>

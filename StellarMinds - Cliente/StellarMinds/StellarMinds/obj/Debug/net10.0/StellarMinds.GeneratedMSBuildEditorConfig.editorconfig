@@ -1,0 +1,136 @@
+is_global = true
+build_property.TargetFramework = net10.0
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v10.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EntryPointFilePath = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = StellarMinds
+build_property.RootNamespace = StellarMinds
+build_property.ProjectDir = C:\Users\manue\Desktop\manuel\university\3er Semestre\Desarrollo web asistido por IA\StellarMinds - Cliente\StellarMinds\StellarMinds\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 10.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\manue\Desktop\manuel\university\3er Semestre\Desarrollo web asistido por IA\StellarMinds - Cliente\StellarMinds\StellarMinds
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 10.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/manue/Desktop/manuel/university/3er Semestre/Desarrollo web asistido por IA/StellarMinds - Cliente/StellarMinds/StellarMinds/Views/Equipo/CreateCamara.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBvXENyZWF0ZUNhbWFyYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/manue/Desktop/manuel/university/3er Semestre/Desarrollo web asistido por IA/StellarMinds - Cliente/StellarMinds/StellarMinds/Views/Equipo/CreateMontura.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBvXENyZWF0ZU1vbnR1cmEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/manue/Desktop/manuel/university/3er Semestre/Desarrollo web asistido por IA/StellarMinds - Cliente/StellarMinds/StellarMinds/Views/Equipo/CreateOcular.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBvXENyZWF0ZU9jdWxhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/manue/Desktop/manuel/university/3er Semestre/Desarrollo web asistido por IA/StellarMinds - Cliente/StellarMinds/StellarMinds/Views/Equipo/CreateTelescopio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBvXENyZWF0ZVRlbGVzY29waW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/manue/Desktop/manuel/university/3er Semestre/Desarrollo web asistido por IA/StellarMinds - Cliente/StellarMinds/StellarMinds/Views/Equipo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/manue/Desktop/manuel/university/3er Semestre/Desarrollo web asistido por IA/StellarMinds - Cliente/StellarMinds/StellarMinds/Views/Equipo/SeleccionarTipo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBvXFNlbGVjY2lvbmFyVGlwby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/manue/Desktop/manuel/university/3er Semestre/Desarrollo web asistido por IA/StellarMinds - Cliente/StellarMinds/StellarMinds/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/manue/Desktop/manuel/university/3er Semestre/Desarrollo web asistido por IA/StellarMinds - Cliente/StellarMinds/StellarMinds/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/manue/Desktop/manuel/university/3er Semestre/Desarrollo web asistido por IA/StellarMinds - Cliente/StellarMinds/StellarMinds/Views/Observacion/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2JzZXJ2YWNpb25cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/manue/Desktop/manuel/university/3er Semestre/Desarrollo web asistido por IA/StellarMinds - Cliente/StellarMinds/StellarMinds/Views/Observacion/RankingObjetosCelestes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2JzZXJ2YWNpb25cUmFua2luZ09iamV0b3NDZWxlc3Rlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/manue/Desktop/manuel/university/3er Semestre/Desarrollo web asistido por IA/StellarMinds - Cliente/StellarMinds/StellarMinds/Views/Prestamo/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/manue/Desktop/manuel/university/3er Semestre/Desarrollo web asistido por IA/StellarMinds - Cliente/StellarMinds/StellarMinds/Views/Prestamo/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/manue/Desktop/manuel/university/3er Semestre/Desarrollo web asistido por IA/StellarMinds - Cliente/StellarMinds/StellarMinds/Views/Prestamo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/manue/Desktop/manuel/university/3er Semestre/Desarrollo web asistido por IA/StellarMinds - Cliente/StellarMinds/StellarMinds/Views/Prestamo/InformacionAuditoriaPrestamo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9cSW5mb3JtYWNpb25BdWRpdG9yaWFQcmVzdGFtby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/manue/Desktop/manuel/university/3er Semestre/Desarrollo web asistido por IA/StellarMinds - Cliente/StellarMinds/StellarMinds/Views/Prestamo/ListadoPorFechas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9cTGlzdGFkb1BvckZlY2hhcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/manue/Desktop/manuel/university/3er Semestre/Desarrollo web asistido por IA/StellarMinds - Cliente/StellarMinds/StellarMinds/Views/Prestamo/ListaPrestamosActivos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9cTGlzdGFQcmVzdGFtb3NBY3Rpdm9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/manue/Desktop/manuel/university/3er Semestre/Desarrollo web asistido por IA/StellarMinds - Cliente/StellarMinds/StellarMinds/Views/Prestamo/SeleccionarSocio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9cU2VsZWNjaW9uYXJTb2Npby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/manue/Desktop/manuel/university/3er Semestre/Desarrollo web asistido por IA/StellarMinds - Cliente/StellarMinds/StellarMinds/Views/Prestamo/SociosPorTelescopio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9cU29jaW9zUG9yVGVsZXNjb3Bpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/manue/Desktop/manuel/university/3er Semestre/Desarrollo web asistido por IA/StellarMinds - Cliente/StellarMinds/StellarMinds/Views/Prestamo/VerAuditoria.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9cVmVyQXVkaXRvcmlhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/manue/Desktop/manuel/university/3er Semestre/Desarrollo web asistido por IA/StellarMinds - Cliente/StellarMinds/StellarMinds/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/manue/Desktop/manuel/university/3er Semestre/Desarrollo web asistido por IA/StellarMinds - Cliente/StellarMinds/StellarMinds/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/manue/Desktop/manuel/university/3er Semestre/Desarrollo web asistido por IA/StellarMinds - Cliente/StellarMinds/StellarMinds/Views/Socio/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29jaW9cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/manue/Desktop/manuel/university/3er Semestre/Desarrollo web asistido por IA/StellarMinds - Cliente/StellarMinds/StellarMinds/Views/Socio/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29jaW9cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/manue/Desktop/manuel/university/3er Semestre/Desarrollo web asistido por IA/StellarMinds - Cliente/StellarMinds/StellarMinds/Views/Socio/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29jaW9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/manue/Desktop/manuel/university/3er Semestre/Desarrollo web asistido por IA/StellarMinds - Cliente/StellarMinds/StellarMinds/Views/Socio/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29jaW9cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/manue/Desktop/manuel/university/3er Semestre/Desarrollo web asistido por IA/StellarMinds - Cliente/StellarMinds/StellarMinds/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/manue/Desktop/manuel/university/3er Semestre/Desarrollo web asistido por IA/StellarMinds - Cliente/StellarMinds/StellarMinds/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/manue/Desktop/manuel/university/3er Semestre/Desarrollo web asistido por IA/StellarMinds - Cliente/StellarMinds/StellarMinds/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-wml5rmthpm

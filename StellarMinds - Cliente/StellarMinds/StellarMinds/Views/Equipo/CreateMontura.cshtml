@@ -1,0 +1,77 @@
+﻿@model StellarMinds.Models.MonturaModel
+
+@{
+    //si es edición o creación
+    bool esEdicion = Model != null && Model.IdEquipo > 0;
+}
+
+<h1>Crear Montura</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+
+        @if (ViewBag.Error != null)
+        {
+            <div class="alert alert-danger">@ViewBag.Error</div>
+        }
+
+        <form asp-action="@(esEdicion ? "EditMontura" : "CreateMontura")" asp-route-id="@Model?.IdEquipo">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            @if (esEdicion)
+            {
+                <input type="hidden" asp-for="IdEquipo" />
+            }
+
+            <div class="form-group">
+                <label asp-for="Marca" class="control-label"></label>
+                <input asp-for="Marca" class="form-control" />
+                <span asp-validation-for="Marca" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Modelo" class="control-label"></label>
+                <input asp-for="Modelo" class="form-control" />
+                <span asp-validation-for="Modelo" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="CantidadDisponible" class="control-label"></label>
+                <input asp-for="CantidadDisponible" class="form-control" />
+                <span asp-validation-for="CantidadDisponible" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="TipoMontura" class="control-label">Tipo de Montura</label>
+                <select asp-for="TipoMontura" class="form-control">
+                    <option value="">Seleccione un tipo...</option>
+                    <option value="0">Ecuatorial</option>
+                    <option value="1">Altazimutal</option>
+                    <option value="2">Hibrida</option>
+                </select>
+                <span asp-validation-for="TipoMontura" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="CargaUtil" class="control-label">Carga Útil</label>
+                <input asp-for="CargaUtil" class="form-control" />
+                <span asp-validation-for="CargaUtil" class="text-danger"></span>
+            </div>
+
+            <div class="form-group form-check mt-2 mb-2">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="EsComputarizada" /> Computarizada?
+                </label>
+            </div>
+            
+            <div class="form-group mt-3">
+                <input type="submit" value="Guardar" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<p class="mt-3">
+    <a asp-action="Index" class="btn btn-secondary">Volver a la lista</a>
+</p>
+

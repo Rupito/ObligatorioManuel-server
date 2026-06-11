@@ -1,0 +1,82 @@
+﻿@model IEnumerable<StellarMinds.Models.PrestamoModel>
+
+@{
+    ViewData["Title"] = "Préstamos Activos del Socio";
+}
+
+<h1>Préstamos a Devolución</h1>
+<hr />
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">@ViewBag.Error</div>
+}
+
+@if (ViewBag.Mensaje != null)
+{
+    <div class="alert alert-success">@ViewBag.Mensaje</div>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdPrestamo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaInicio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaFin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Estado)
+            </th>
+            <th
+                class="text-center">Acción
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdPrestamo)
+                    </td>
+                    <td>
+                        @item.FechaInicio.ToShortDateString()
+                    </td>
+                    <td>
+                        @item.FechaFin.ToShortDateString()
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Estado)
+                    </td>
+
+                    <td class="text-center">
+                        <form asp-action="DevolucionPrestamo" method="post">
+                            <input type="hidden" name="idPrestamo" value="@item.IdPrestamo" />
+                            <input type="hidden" name="idSocio" value="@ViewBag.IdSocio" />
+                            <button type="submit" class="btn btn-success"> Hacer Devolución </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="9" class="text-center">
+                    Este socio no tiene ningún equipo en préstamo.
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<p class="mt-3">
+    <a asp-action="SeleccionarSocio" class="btn btn-secondary">Volver a Seleccionar Socio</a>
+</p>

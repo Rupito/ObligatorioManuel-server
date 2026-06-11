@@ -1,0 +1,167 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\manue\\Desktop\\manuel\\university\\3er Semestre\\Desarrollo web asistido por IA\\StellarMinds - Cliente\\StellarMinds\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AFB6F7BA-41BD-D8A8-34DC-FD6A5FF20B1E}|StellarMinds\\StellarMinds.csproj|c:\\users\\manue\\desktop\\manuel\\university\\3er semestre\\desarrollo web asistido por ia\\stellarminds - cliente\\stellarminds\\stellarminds\\controllers\\prestamocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFB6F7BA-41BD-D8A8-34DC-FD6A5FF20B1E}|StellarMinds\\StellarMinds.csproj|solutionrelative:stellarminds\\controllers\\prestamocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFB6F7BA-41BD-D8A8-34DC-FD6A5FF20B1E}|StellarMinds\\StellarMinds.csproj|c:\\users\\manue\\desktop\\manuel\\university\\3er semestre\\desarrollo web asistido por ia\\stellarminds - cliente\\stellarminds\\stellarminds\\controllers\\sociocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFB6F7BA-41BD-D8A8-34DC-FD6A5FF20B1E}|StellarMinds\\StellarMinds.csproj|solutionrelative:stellarminds\\controllers\\sociocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFB6F7BA-41BD-D8A8-34DC-FD6A5FF20B1E}|StellarMinds\\StellarMinds.csproj|c:\\users\\manue\\desktop\\manuel\\university\\3er semestre\\desarrollo web asistido por ia\\stellarminds - cliente\\stellarminds\\stellarminds\\controllers\\observacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFB6F7BA-41BD-D8A8-34DC-FD6A5FF20B1E}|StellarMinds\\StellarMinds.csproj|solutionrelative:stellarminds\\controllers\\observacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFB6F7BA-41BD-D8A8-34DC-FD6A5FF20B1E}|StellarMinds\\StellarMinds.csproj|c:\\users\\manue\\desktop\\manuel\\university\\3er semestre\\desarrollo web asistido por ia\\stellarminds - cliente\\stellarminds\\stellarminds\\controllers\\equipocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFB6F7BA-41BD-D8A8-34DC-FD6A5FF20B1E}|StellarMinds\\StellarMinds.csproj|solutionrelative:stellarminds\\controllers\\equipocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFB6F7BA-41BD-D8A8-34DC-FD6A5FF20B1E}|StellarMinds\\StellarMinds.csproj|c:\\users\\manue\\desktop\\manuel\\university\\3er semestre\\desarrollo web asistido por ia\\stellarminds - cliente\\stellarminds\\stellarminds\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFB6F7BA-41BD-D8A8-34DC-FD6A5FF20B1E}|StellarMinds\\StellarMinds.csproj|solutionrelative:stellarminds\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFB6F7BA-41BD-D8A8-34DC-FD6A5FF20B1E}|StellarMinds\\StellarMinds.csproj|c:\\users\\manue\\desktop\\manuel\\university\\3er semestre\\desarrollo web asistido por ia\\stellarminds - cliente\\stellarminds\\stellarminds\\auxiliar\\clientehttpauxiliar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFB6F7BA-41BD-D8A8-34DC-FD6A5FF20B1E}|StellarMinds\\StellarMinds.csproj|solutionrelative:stellarminds\\auxiliar\\clientehttpauxiliar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFB6F7BA-41BD-D8A8-34DC-FD6A5FF20B1E}|StellarMinds\\StellarMinds.csproj|c:\\users\\manue\\desktop\\manuel\\university\\3er semestre\\desarrollo web asistido por ia\\stellarminds - cliente\\stellarminds\\stellarminds\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{AFB6F7BA-41BD-D8A8-34DC-FD6A5FF20B1E}|StellarMinds\\StellarMinds.csproj|solutionrelative:stellarminds\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFB6F7BA-41BD-D8A8-34DC-FD6A5FF20B1E}|StellarMinds\\StellarMinds.csproj|c:\\users\\manue\\desktop\\manuel\\university\\3er semestre\\desarrollo web asistido por ia\\stellarminds - cliente\\stellarminds\\stellarminds\\views\\observacion\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AFB6F7BA-41BD-D8A8-34DC-FD6A5FF20B1E}|StellarMinds\\StellarMinds.csproj|solutionrelative:stellarminds\\views\\observacion\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFB6F7BA-41BD-D8A8-34DC-FD6A5FF20B1E}|StellarMinds\\StellarMinds.csproj|c:\\users\\manue\\desktop\\manuel\\university\\3er semestre\\desarrollo web asistido por ia\\stellarminds - cliente\\stellarminds\\stellarminds\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AFB6F7BA-41BD-D8A8-34DC-FD6A5FF20B1E}|StellarMinds\\StellarMinds.csproj|solutionrelative:stellarminds\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EquipoController.cs",
+              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\manuel\\university\\3er Semestre\\Desarrollo web asistido por IA\\StellarMinds - Cliente\\StellarMinds\\StellarMinds\\Controllers\\EquipoController.cs",
+              "RelativeDocumentMoniker": "StellarMinds\\Controllers\\EquipoController.cs",
+              "ToolTip": "C:\\Users\\manue\\Desktop\\manuel\\university\\3er Semestre\\Desarrollo web asistido por IA\\StellarMinds - Cliente\\StellarMinds\\StellarMinds\\Controllers\\EquipoController.cs",
+              "RelativeToolTip": "StellarMinds\\Controllers\\EquipoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-11T05:50:12.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PrestamoController.cs",
+              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\manuel\\university\\3er Semestre\\Desarrollo web asistido por IA\\StellarMinds - Cliente\\StellarMinds\\StellarMinds\\Controllers\\PrestamoController.cs",
+              "RelativeDocumentMoniker": "StellarMinds\\Controllers\\PrestamoController.cs",
+              "ToolTip": "C:\\Users\\manue\\Desktop\\manuel\\university\\3er Semestre\\Desarrollo web asistido por IA\\StellarMinds - Cliente\\StellarMinds\\StellarMinds\\Controllers\\PrestamoController.cs",
+              "RelativeToolTip": "StellarMinds\\Controllers\\PrestamoController.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAA0AAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-11T03:59:55.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\manuel\\university\\3er Semestre\\Desarrollo web asistido por IA\\StellarMinds - Cliente\\StellarMinds\\StellarMinds\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "StellarMinds\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\manue\\Desktop\\manuel\\university\\3er Semestre\\Desarrollo web asistido por IA\\StellarMinds - Cliente\\StellarMinds\\StellarMinds\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "StellarMinds\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-10T02:55:59.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\manuel\\university\\3er Semestre\\Desarrollo web asistido por IA\\StellarMinds - Cliente\\StellarMinds\\StellarMinds\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "StellarMinds\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\manue\\Desktop\\manuel\\university\\3er Semestre\\Desarrollo web asistido por IA\\StellarMinds - Cliente\\StellarMinds\\StellarMinds\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "StellarMinds\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T02:55:27.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SocioController.cs",
+              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\manuel\\university\\3er Semestre\\Desarrollo web asistido por IA\\StellarMinds - Cliente\\StellarMinds\\StellarMinds\\Controllers\\SocioController.cs",
+              "RelativeDocumentMoniker": "StellarMinds\\Controllers\\SocioController.cs",
+              "ToolTip": "C:\\Users\\manue\\Desktop\\manuel\\university\\3er Semestre\\Desarrollo web asistido por IA\\StellarMinds - Cliente\\StellarMinds\\StellarMinds\\Controllers\\SocioController.cs",
+              "RelativeToolTip": "StellarMinds\\Controllers\\SocioController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAAA8AAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T02:35:38.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ObservacionController.cs",
+              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\manuel\\university\\3er Semestre\\Desarrollo web asistido por IA\\StellarMinds - Cliente\\StellarMinds\\StellarMinds\\Controllers\\ObservacionController.cs",
+              "RelativeDocumentMoniker": "StellarMinds\\Controllers\\ObservacionController.cs",
+              "ToolTip": "C:\\Users\\manue\\Desktop\\manuel\\university\\3er Semestre\\Desarrollo web asistido por IA\\StellarMinds - Cliente\\StellarMinds\\StellarMinds\\Controllers\\ObservacionController.cs",
+              "RelativeToolTip": "StellarMinds\\Controllers\\ObservacionController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T20:56:33.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ClienteHttpAuxiliar.cs",
+              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\manuel\\university\\3er Semestre\\Desarrollo web asistido por IA\\StellarMinds - Cliente\\StellarMinds\\StellarMinds\\Auxiliar\\ClienteHttpAuxiliar.cs",
+              "RelativeDocumentMoniker": "StellarMinds\\Auxiliar\\ClienteHttpAuxiliar.cs",
+              "ToolTip": "C:\\Users\\manue\\Desktop\\manuel\\university\\3er Semestre\\Desarrollo web asistido por IA\\StellarMinds - Cliente\\StellarMinds\\StellarMinds\\Auxiliar\\ClienteHttpAuxiliar.cs",
+              "RelativeToolTip": "StellarMinds\\Auxiliar\\ClienteHttpAuxiliar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T20:29:08.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "bootstrap-grid.css",
+              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\manuel\\university\\3er Semestre\\Desarrollo web asistido por IA\\StellarMinds - Cliente\\StellarMinds\\StellarMinds\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+              "RelativeDocumentMoniker": "StellarMinds\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+              "ToolTip": "C:\\Users\\manue\\Desktop\\manuel\\university\\3er Semestre\\Desarrollo web asistido por IA\\StellarMinds - Cliente\\StellarMinds\\StellarMinds\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+              "RelativeToolTip": "StellarMinds\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+              "ViewState": "AgIAAMMEAAAAAAAAAAAAAMMEAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-06-11T04:34:03.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\manuel\\university\\3er Semestre\\Desarrollo web asistido por IA\\StellarMinds - Cliente\\StellarMinds\\StellarMinds\\Views\\Observacion\\Create.cshtml",
+              "RelativeDocumentMoniker": "StellarMinds\\Views\\Observacion\\Create.cshtml",
+              "ToolTip": "C:\\Users\\manue\\Desktop\\manuel\\university\\3er Semestre\\Desarrollo web asistido por IA\\StellarMinds - Cliente\\StellarMinds\\StellarMinds\\Views\\Observacion\\Create.cshtml",
+              "RelativeToolTip": "StellarMinds\\Views\\Observacion\\Create.cshtml",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAAAGMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-08T17:44:32.267Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

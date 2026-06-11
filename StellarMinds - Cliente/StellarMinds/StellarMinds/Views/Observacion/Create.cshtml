@@ -1,0 +1,145 @@
+﻿@model StellarMinds.Models.ObservacionModel
+
+@{
+    ViewData["Title"] = "Planificar Observación";
+}
+
+@if (!String.IsNullOrWhiteSpace(ViewBag.Mensaje))
+{
+    <div class="alert alert-success">
+        @ViewBag.Mensaje
+    </div>
+}
+
+<h2>Planificar Observación</h2>
+<hr />
+
+<div class="row">
+    <div class="col-md-6">
+        @if (ViewBag.Error != null)
+        {
+            <div class="alert alert-danger">@ViewBag.Error</div>
+        }
+
+        <div id="resultado-gemini" class="mb-3 d-none"></div>
+
+        <form asp-action="Create" id="form-observacion">
+
+            <div asp-validation-summary="All" class="text-danger mb-3 fw-bold"></div>
+            
+            <input type="hidden" asp-for="Indicador" id="input-indicador" />
+            <input type="hidden" asp-for="Motivo" id="input-motivo" />
+
+            <div class="form-group mb-3">
+                <label asp-for="FechaObservacion" class="control-label">Fecha de la Observación</label>
+                <input asp-for="FechaObservacion" class="form-control" type="date" />
+                <span asp-validation-for="FechaObservacion" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="IdPrestamo" class="control-label">Seleccione su Préstamo Vigente</label>
+                <select asp-for="IdPrestamo" id="combo-prestamo" class="form-control">
+                    <option value="">-- Elija un préstamo --</option>
+                    @foreach (PrestamoModel p in ViewBag.Prestamos)
+                    {
+                        <option value="@p.IdPrestamo">Préstamo #@p.IdPrestamo (Inicio: @p.FechaAltaPrestamo.ToString("dd/MM/yyyy"))</option>
+                    }
+                </select>
+                <span asp-validation-for="IdPrestamo" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="IdObjetoCeleste" class="control-label">Objeto Celeste a Observar</label>
+                <select asp-for="IdObjetoCeleste" id="combo-objeto" class="form-control">
+                    <option value="">-- Elija un objeto celeste --</option>
+                    @foreach (ObjetoCelesteModel o in ViewBag.ObjetosCelestes)
+                    {
+                        <option value="@o.IdObjetoCeleste">@o.Nombre (@o.TipoObjeto)</option>
+                    }
+                </select>
+                <span asp-validation-for="IdObjetoCeleste" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mt-4">
+                <button type="button" id="btn-evaluar" class="btn btn-info text-white">Consultar Adecuación (IA)</button>
+                <button type="submit" id="btn-guardar" class="btn btn-success" disabled>Confirmar Alta</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.getElementById("btn-evaluar").addEventListener("click", function () {
+            const idPrestamo = document.getElementById("combo-prestamo").value;
+            const idObjeto = document.getElementById("combo-objeto").value;
+            const fecha = document.getElementById("form-observacion").querySelector('input[type="date"]').value;
+
+            if (!idPrestamo || !idObjeto || !fecha) {
+                alert("complete la fecha, el prestamo y objeto celeste.");
+                return;
+            }
+
+            const contenedorResultado = document.getElementById("resultado-gemini");
+            const btnGuardar = document.getElementById("btn-guardar");
+
+            contenedorResultado.className = "alert alert-secondary";
+            contenedorResultado.innerHTML = "Consultando a Gemini AI...";
+            contenedorResultado.classList.remove("d-none");
+
+            // mapeo los datos
+            const datosParaBackend = {
+                IdPrestamo: parseInt(idPrestamo),
+                IdObjetoCeleste: parseInt(idObjeto),
+                FechaObservacion: fecha,
+                Motivo: ""
+            };
+
+            fetch('/Observacion/EvaluarConIA', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(datosParaBackend)
+        })
+        .then(async response => {
+            if (!response.ok) {
+                const textoError = await response.text();
+                throw new Error(textoError || "Error desconocido en el servidor.");
+            }
+            return response.json();
+        })
+        .then(data => {
+            let claseAlerta = "";
+            let textoIndicador = "";
+
+            if (data.indicador === 0 || data.indicador === "IDEAL") {
+                claseAlerta = "alert-success border-success";
+                textoIndicador = "IDEAL";
+            } else if (data.indicador === 1 || data.indicador === "ADECUADO") {
+                claseAlerta = "alert-info border-info";
+                textoIndicador = "ADECUADO";
+            } else {
+                claseAlerta = "alert-danger border-danger";
+                textoIndicador = "NO RECOMENDABLE";
+            }
+
+            contenedorResultado.className = `alert ${claseAlerta}`;
+            contenedorResultado.innerHTML = `
+                <h4 class="alert-heading fw-bold">${textoIndicador}</h4>
+                <p class="mb-0 text-dark">${data.motivo}</p>
+            `;
+
+            document.getElementById("input-indicador").value = data.indicador;
+            document.getElementById("input-motivo").value = data.motivo;
+            btnGuardar.removeAttribute("disabled");
+        })
+        .catch(error => {
+            // muestra el error real
+            contenedorResultado.className = "alert alert-danger";
+            contenedorResultado.innerHTML = `
+                <h5 class="fw-bold">🚨 Error en el Circuito de Evaluación:</h5>
+                <p class="mb-0"><code>${error.message}</code></p>
+            `;
+        });
+        });
+    </script>
+}

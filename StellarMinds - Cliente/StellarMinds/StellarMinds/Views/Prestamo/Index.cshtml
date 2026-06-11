@@ -1,0 +1,79 @@
+﻿@model IEnumerable<StellarMinds.Models.PrestamoModel>
+
+@{
+    ViewData["Title"] = "Listado de prestamos";
+}
+
+<h1>Listado de prestamos</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Registrar Préstamo</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdPrestamo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaInicio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaFin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Estado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdSocio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdMontura)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdTelescopio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdEquipoVisual)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdPrestamo)
+                </td>
+                <td>
+                    @item.FechaInicio.ToShortDateString()
+                </td>
+                <td>
+                    @item.FechaFin.ToShortDateString()
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Estado)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdSocio)
+                </td>
+                <td>
+                    @(item.IdMontura?.ToString() ?? "Eliminado")
+                </td>
+                <td>
+                    @(item.IdTelescopio?.ToString() ?? "Eliminado")
+                </td>
+                <td>
+                    @(item.IdEquipoVisual?.ToString() ?? "Eliminado")
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

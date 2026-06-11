@@ -1,0 +1,39 @@
+﻿@model IEnumerable<StellarMinds.Models.RankingObjetoCelesteModel>
+
+@{
+    ViewData["Title"] = "Ranking Objetos Celestes";
+}
+
+<h2>Ranking Objetos Celestes</h2>
+<hr />
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">@ViewBag.Error</div>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Puesto</th>
+            <th>Nombre del Objeto</th>
+            <th>Tipo</th>
+            <th>Total de Observaciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            int puesto = 1;
+         }
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>#@puesto</td>
+                <td>@item.Nombre</td>
+                <td>@item.TipoObjetoCeleste</td>
+                <td>@item.CantidadObservaciones</td>
+            </tr>
+            puesto++;
+        }
+    </tbody>
+</table>

@@ -1,0 +1,77 @@
+﻿@model StellarMinds.Models.CamaraModel
+
+@{
+    //si es edición o creación
+    bool esEdicion = Model != null && Model.IdEquipo > 0;
+}
+
+<h1>Crear Camara</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+
+        @if (ViewBag.Error != null)
+        {
+            <div class="alert alert-danger">@ViewBag.Error</div>
+        }
+
+        <form asp-action="@(esEdicion ? "EditCamara" : "CreateCamara")" asp-route-id="@Model?.IdEquipo">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            @if (esEdicion)
+            {
+                <input type="hidden" asp-for="IdEquipo" />
+            }
+
+            <div class="form-group">
+                <label asp-for="Marca" class="control-label"></label>
+                <input asp-for="Marca" class="form-control" />
+                <span asp-validation-for="Marca" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Modelo" class="control-label"></label>
+                <input asp-for="Modelo" class="form-control" />
+                <span asp-validation-for="Modelo" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="CantidadDisponible" class="control-label"></label>
+                <input asp-for="CantidadDisponible" class="form-control" />
+                <span asp-validation-for="CantidadDisponible" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="TipoSensor" class="control-label">Tipo de Sensor</label>
+                <select asp-for="TipoSensor" class="form-control">
+                    <option value="">Seleccione un tipo...</option>
+                    <option value="0">CMOS</option>
+                    <option value="1">CCD</option>
+                </select>
+                <span asp-validation-for="TipoSensor" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Resolucion" class="control-label"></label>
+                <input asp-for="Resolucion" class="form-control" />
+                <span asp-validation-for="Resolucion" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="TamanioPixel" class="control-label"></label>
+                <input asp-for="TamanioPixel" class="form-control" />
+                <span asp-validation-for="TamanioPixel" class="text-danger"></span>
+            </div>
+            
+            
+            <div class="form-group mt-3">
+                <input type="submit" value="Guardar" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<p class="mt-3">
+    <a asp-action="Index" class="btn btn-secondary">Volver a la lista</a>
+</p>
+

@@ -1,0 +1,66 @@
+﻿@model IEnumerable<StellarMinds.Models.EquipoModel>
+
+@{
+    ViewData["Title"] = "Lista de Equipos";
+}
+
+<h1>Lista de Equipos</h1>
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">@ViewBag.Error</div>
+}
+
+@if (!String.IsNullOrWhiteSpace(ViewBag.Mensaje))
+{
+    <div class="alert alert-success">
+        @ViewBag.Mensaje
+    </div>
+}
+
+<p>
+    <a asp-action="SeleccionarTipo" asp-controller="Equipo" class="btn btn-primary">Crear nuevo equipo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdEquipo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Marca)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Modelo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CantidadDisponible)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdEquipo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Marca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Modelo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CantidadDisponible)
+            </td>
+            <td>
+                    <a class="btn btn-warning btn-sm me-2" asp-controller="Equipo" asp-action="Edit" asp-route-id="@item.IdEquipo"> Editar </a>
+                    <form asp-action="Delete" asp-route-id="@item.IdEquipo" method="post" class="d-inline-block">
+                        <button type="submit" class="btn btn-danger btn-sm"> Borrar </button>
+                    </form>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

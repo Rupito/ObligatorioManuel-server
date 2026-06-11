@@ -1,0 +1,78 @@
+﻿@model IEnumerable<StellarMinds.Models.PrestamoModel>
+
+@{
+    ViewData["Title"] = "Préstamos Por fechas";
+}
+
+<h2>Préstamos Por fechas</h2>
+<hr />
+
+<form asp-action="ListadoPorFechas" method="get">
+    <div class="col-md-4">
+        <label class="form-label">Mes</label>
+        <input type="number" name="mes" class="form-control" min="1" max="12" required />
+    </div>
+
+    <div class="col-md-4">
+        <label class="form-label">Año</label>
+        <input type="number" name="anio" class="form-control" min="2018" max="2026" required />
+    </div>
+
+    <div class="col-md-4">
+        <button type="submit" class="btn btn-primary">Filtrar</button>
+    </div>
+</form>
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">@ViewBag.Error</div>
+}
+
+@if (ViewBag.MesSeleccionado == null || ViewBag.AnioSeleccionado == null)
+{
+    <div class="alert alert-secondary text-center py-4">
+        Elija un mes y un año
+    </div>
+}
+else if (Model == null || !Model.Any())
+{
+    <div class="alert alert-warning text-center py-4">
+        No Tiene ningun préstamo realizado el @ViewBag.MesSeleccionado/@ViewBag.AnioSeleccionado.
+    </div>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Préstamo</th>
+                <th>FechaInicio</th>
+                <th>FechaFin</th>
+                <th>Estado</th>
+                <th>Atrasado?</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                bool estaAtrasado = item.Estado.ToString() == "EN_PRESTAMO" && DateTime.Now > item.FechaFin;
+                <tr>
+                    <td>@item.IdPrestamo</td>
+                    <td>@item.FechaInicio.ToString("dd/MM/yyyy")</td>
+                    <td>@item.FechaFin.ToString("dd/MM/yyyy")</td>
+                    <td>@item.Estado</td>
+                    <td>
+                        @if (estaAtrasado)
+                        {
+                            <span class="badge bg-danger text-white">Si</span>
+                        }
+                        else
+                        {
+                            <span class="text-muted">No</span>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

@@ -1,0 +1,47 @@
+﻿@model StellarMinds.Models.PrestamoModel
+
+@{
+    ViewData["Title"] = "Ficha de Auditoría";
+}
+
+<h2>Ficha de Auditoría - Registro #@Model.IdPrestamo</h2>
+<hr />
+
+<div class="row mt-4">
+    <div class="col-md-6 mb-4">
+        <div class="card border-success h-100 shadow-sm">
+            <div class="card-header bg-success text-white fw-bold py-3">Acción Realizada: ALTA DE PRÉSTAMO</div>
+            <div class="card-body">
+                <p class="card-text"><strong>Fecha:</strong> @Model.FechaAltaPrestamo.ToString("dd/MM/yyyy")</p>
+                <p class="card-text"><strong>ID Coordinador Responsable:</strong> #@Model.IdSocioAltaPrestamo</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 mb-4">
+        <div class="card @(Model.Estado.ToString() == "DEVUELTO" ? "border-info" : "border-secondary") h-100 shadow-sm">
+            <div class="card-header @(Model.Estado.ToString() == "DEVUELTO" ? "bg-info text-white" : "bg-secondary text-white") fw-bold py-3">
+                Acción Realizada: DEVOLUCION
+            </div>
+            <div class="card-body">
+                @if (Model.Estado.ToString() == "DEVUELTO")
+                {
+                    <p class="card-text"><strong>Fecha:</strong> @Model.FechaDevolucionPrestamo?.ToString("dd/MM/yyyy")</p>
+                    <p class="card-text"><strong>ID Coordinador Responsable:</strong> #@Model.IdSocioDevolucionPrestamo</p>
+                }
+                else
+                {
+                    <div class="text-center py-4">
+                        <span class="badge bg-warning text-dark p-2 mb-2">Préstamo Vigente</span>
+                        <p class="text-muted small mb-0">Todavía no se ha devuelto.</p>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mt-4">
+    <a asp-action="Details" asp-route-id="@Model.IdPrestamo" class="btn btn-primary px-4 py-2 me-2">Ver Detalles</a>
+    <a asp-action="InformacionAuditoriaPrestamo" class="btn btn-secondary px-4 py-2">Volver al Buscador</a>
+</div>

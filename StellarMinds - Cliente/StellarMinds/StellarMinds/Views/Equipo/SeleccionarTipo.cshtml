@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Seleccionar Tipo de Equipo";
+}
+
+<div class="container mt-4">
+    <h2>Seleccione el tipo de equipo</h2>
+    <hr />
+
+    <div class="list-group col-md-6">
+        <a asp-controller="Equipo" asp-action="CreateTelescopio" class="list-group-item list-group-item-action mb-3">
+            Telescopio
+        </a>
+        <a asp-controller="Equipo" asp-action="CreateMontura" class="list-group-item list-group-item-action mb-3">
+            Montura
+        </a>
+        <a asp-controller="Equipo" asp-action="CreateCamara" class="list-group-item list-group-item-action mb-3">
+            Cámara
+        </a>
+        <a asp-controller="Equipo" asp-action="CreateOcular" class="list-group-item list-group-item-action mb-3">
+            Ocular
+        </a>
+    </div>
+
+    <div class="mt-4">
+        <a asp-controller="Index" asp-action="Index" class="btn btn-secondary">Volver a la lista</a>
+    </div>
+</div>
